@@ -2,9 +2,14 @@ import { motion } from 'framer-motion'
 import Head from 'next/head'
 
 const variants = {
-  hidden: { opacity: 0, x: 0, y: 20 },
-  enter: { opacity: 1, x: 0, y: 0 },
-  exit: { opacity: 0, x: 0, y: 20 }
+  hidden: { opacity: 0, x: 0, y: 20, scale: 0.5 },
+  enter: { opacity: 1, x: 0, y: 0, scale: 1 },
+  exit: {
+    opacity: 0,
+    x: Math.floor(Math.random() * 100),
+    y: 900,
+    scale: 0
+  }
 }
 
 const Layout = ({ children, title }) => {
@@ -15,7 +20,7 @@ const Layout = ({ children, title }) => {
       animate="enter"
       exit="exit"
       variants={variants}
-      transition={{ duration: 0.4, type: 'easeInOut' }}
+      transition={{ duration: 0.2, type: 'easeOut' }}
       style={{ position: 'relative' }}
     >
       <>
