@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "dev": "next dev",
-    "buid": "next build",
+    "build": "next build",
     "prettier": "prettier -write .",
     "lint": "next lint"
   },
