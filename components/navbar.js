@@ -7,16 +7,12 @@ import {
   Stack,
   Heading,
   Flex,
-  Menu,
-  MenuItem,
-  MenuList,
-  MenuButton,
-  IconButton,
   useColorModeValue
 } from '@chakra-ui/react'
-import { HamburgerIcon } from '@chakra-ui/icons'
 import ThemeToggleButton from '../components/theme-toggle-button'
 
+{
+  /* 
 const LinkItem = ({ href, path, children }) => {
   const active = path === href
   const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
@@ -32,7 +28,11 @@ const LinkItem = ({ href, path, children }) => {
     </NextLink>
   )
 }
+*/
+}
 
+{
+  /* 
 const Navbar = props => {
   const { path } = props
   return (
@@ -44,6 +44,17 @@ const Navbar = props => {
       style={{ backdropFilter: 'blur(1px)' }}
       zIndex={2}
       {...props}
+*/
+}
+const Navbar = () => {
+  return (
+    <Box
+      position="fixed"
+      as="nav"
+      w="100%"
+      bg={useColorModeValue('#ffffff40', '#20202380')}
+      style={{ backdropFilter: 'blur(1px)' }}
+      zIndex={2}
     >
       <Container
         display="flex"

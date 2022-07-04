@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { Box, Container, Badge, Image, Button } from '@chakra-ui/react'
+import { Box, Container, Badge, Image, VisuallyHidden } from '@chakra-ui/react'
 import { Title } from '../../components/post'
 import Layout from '../../components/layouts/article'
 import Paragraph from '../../components/paragraph'
@@ -47,6 +47,9 @@ export default function Post({ post }) {
           {post[0].name} <Badge>{post[0].date}</Badge>
         </Title>
         <Paragraph>{post[0].text}</Paragraph>
+        <VisuallyHidden>
+          <Paragraph> {id} </Paragraph>
+        </VisuallyHidden>
 
         <Box maxW="container.sm" align="center">
           <Cardeffect

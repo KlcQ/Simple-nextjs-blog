@@ -38,7 +38,7 @@ const Page = () => {
         <Box display={{ md: 'flex' }}>
           <Box flexGrow={1}>
             <Heading as="h2" mb={2} variant="page-title">
-              "JOBD" - Trainwreckstv
+              &quot;JOBD&quot; - Trainwreckstv
             </Heading>
 
             <Box
