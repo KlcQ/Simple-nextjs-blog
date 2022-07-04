@@ -1,0 +1,36 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+(() => {
+var exports = {};
+exports.id = "pages/api/onlyfans/3-votes-for-women";
+exports.ids = ["pages/api/onlyfans/3-votes-for-women"];
+exports.modules = {
+
+/***/ "(api)/./pages/api/onlyfans/3-votes-for-women.js":
+/*!*************************************************!*\
+  !*** ./pages/api/onlyfans/3-votes-for-women.js ***!
+  \*************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ handler)\n/* harmony export */ });\nfunction handler(req, res) {\n    res.status(200).json([\n        {\n            id: \"3-votes-for-women\",\n            name: \"Votes for Women\",\n            text: \"Every women need to be right! I mean has rights....\",\n            date: \"June 2022\",\n            images: [\n                \"/images/onlyfans/3-votes-for-women/gallery/voteForWomen (1).jpg\",\n                \"/images/onlyfans/3-votes-for-women/gallery/voteForWomen (2).jpg\",\n                \"/images/onlyfans/3-votes-for-women/gallery/voteForWomen (3).jpg\",\n                \"/images/onlyfans/3-votes-for-women/gallery/voteForWomen (4).jpg\",\n                \"/images/onlyfans/3-votes-for-women/gallery/voteForWomen (5).jpg\",\n                \"/images/onlyfans/3-votes-for-women/gallery/voteForWomen (6).jpg\",\n                \"/images/onlyfans/3-votes-for-women/gallery/voteForWomen (7).jpg\",\n                \"/images/onlyfans/3-votes-for-women/gallery/voteForWomen (8).jpg\",\n                \"/images/onlyfans/3-votes-for-women/gallery/voteForWomen (9).jpg\",\n                \"/images/onlyfans/3-votes-for-women/gallery/voteForWomen (10).jpg\",\n                \"/images/onlyfans/3-votes-for-women/gallery/voteForWomen (11).jpg\",\n                \"/images/onlyfans/3-votes-for-women/gallery/voteForWomen (12).jpg\",\n                \"/images/onlyfans/3-votes-for-women/gallery/voteForWomen (13).jpg\",\n                \"/images/onlyfans/3-votes-for-women/gallery/voteForWomen (14).jpg\",\n                \"/images/onlyfans/3-votes-for-women/gallery/voteForWomen (15).jpg\",\n                \"/images/onlyfans/3-votes-for-women/gallery/voteForWomen (16).jpg\",\n                \"/images/onlyfans/3-votes-for-women/gallery/voteForWomen (17).jpg\",\n                \"/images/onlyfans/3-votes-for-women/gallery/voteForWomen (18).jpg\",\n                \"/images/onlyfans/3-votes-for-women/gallery/voteForWomen (19).jpg\",\n                \"/images/onlyfans/3-votes-for-women/gallery/voteForWomen (20).jpg\"\n            ]\n        }\n    ]);\n};\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKGFwaSkvLi9wYWdlcy9hcGkvb25seWZhbnMvMy12b3Rlcy1mb3Itd29tZW4uanMuanMiLCJtYXBwaW5ncyI6Ijs7OztBQUFlLFNBQVNBLE9BQU8sQ0FBQ0MsR0FBRyxFQUFFQyxHQUFHLEVBQUU7SUFDeENBLEdBQUcsQ0FBQ0MsTUFBTSxDQUFDLEdBQUcsQ0FBQyxDQUFDQyxJQUFJLENBQUM7UUFDbkI7WUFDRUMsRUFBRSxFQUFFLG1CQUFtQjtZQUN2QkMsSUFBSSxFQUFFLGlCQUFpQjtZQUN2QkMsSUFBSSxFQUFFLHFEQUFxRDtZQUMzREMsSUFBSSxFQUFFLFdBQVc7WUFDakJDLE1BQU0sRUFBRTtnQkFDTixpRUFBaUU7Z0JBQ2pFLGlFQUFpRTtnQkFDakUsaUVBQWlFO2dCQUNqRSxpRUFBaUU7Z0JBQ2pFLGlFQUFpRTtnQkFDakUsaUVBQWlFO2dCQUNqRSxpRUFBaUU7Z0JBQ2pFLGlFQUFpRTtnQkFDakUsaUVBQWlFO2dCQUNqRSxrRUFBa0U7Z0JBQ2xFLGtFQUFrRTtnQkFDbEUsa0VBQWtFO2dCQUNsRSxrRUFBa0U7Z0JBQ2xFLGtFQUFrRTtnQkFDbEUsa0VBQWtFO2dCQUNsRSxrRUFBa0U7Z0JBQ2xFLGtFQUFrRTtnQkFDbEUsa0VBQWtFO2dCQUNsRSxrRUFBa0U7Z0JBQ2xFLGtFQUFrRTthQUNuRTtTQUNGO0tBQ0YsQ0FBQztDQUNIIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vZGV2Ly4vcGFnZXMvYXBpL29ubHlmYW5zLzMtdm90ZXMtZm9yLXdvbWVuLmpzPzkwYTciXSwic291cmNlc0NvbnRlbnQiOlsiZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gaGFuZGxlcihyZXEsIHJlcykge1xuICByZXMuc3RhdHVzKDIwMCkuanNvbihbXG4gICAge1xuICAgICAgaWQ6ICczLXZvdGVzLWZvci13b21lbicsXG4gICAgICBuYW1lOiAnVm90ZXMgZm9yIFdvbWVuJyxcbiAgICAgIHRleHQ6ICdFdmVyeSB3b21lbiBuZWVkIHRvIGJlIHJpZ2h0ISBJIG1lYW4gaGFzIHJpZ2h0cy4uLi4nLFxuICAgICAgZGF0ZTogJ0p1bmUgMjAyMicsXG4gICAgICBpbWFnZXM6IFtcbiAgICAgICAgJy9pbWFnZXMvb25seWZhbnMvMy12b3Rlcy1mb3Itd29tZW4vZ2FsbGVyeS92b3RlRm9yV29tZW4gKDEpLmpwZycsXG4gICAgICAgICcvaW1hZ2VzL29ubHlmYW5zLzMtdm90ZXMtZm9yLXdvbWVuL2dhbGxlcnkvdm90ZUZvcldvbWVuICgyKS5qcGcnLFxuICAgICAgICAnL2ltYWdlcy9vbmx5ZmFucy8zLXZvdGVzLWZvci13b21lbi9nYWxsZXJ5L3ZvdGVGb3JXb21lbiAoMykuanBnJyxcbiAgICAgICAgJy9pbWFnZXMvb25seWZhbnMvMy12b3Rlcy1mb3Itd29tZW4vZ2FsbGVyeS92b3RlRm9yV29tZW4gKDQpLmpwZycsXG4gICAgICAgICcvaW1hZ2VzL29ubHlmYW5zLzMtdm90ZXMtZm9yLXdvbWVuL2dhbGxlcnkvdm90ZUZvcldvbWVuICg1KS5qcGcnLFxuICAgICAgICAnL2ltYWdlcy9vbmx5ZmFucy8zLXZvdGVzLWZvci13b21lbi9nYWxsZXJ5L3ZvdGVGb3JXb21lbiAoNikuanBnJyxcbiAgICAgICAgJy9pbWFnZXMvb25seWZhbnMvMy12b3Rlcy1mb3Itd29tZW4vZ2FsbGVyeS92b3RlRm9yV29tZW4gKDcpLmpwZycsXG4gICAgICAgICcvaW1hZ2VzL29ubHlmYW5zLzMtdm90ZXMtZm9yLXdvbWVuL2dhbGxlcnkvdm90ZUZvcldvbWVuICg4KS5qcGcnLFxuICAgICAgICAnL2ltYWdlcy9vbmx5ZmFucy8zLXZvdGVzLWZvci13b21lbi9nYWxsZXJ5L3ZvdGVGb3JXb21lbiAoOSkuanBnJyxcbiAgICAgICAgJy9pbWFnZXMvb25seWZhbnMvMy12b3Rlcy1mb3Itd29tZW4vZ2FsbGVyeS92b3RlRm9yV29tZW4gKDEwKS5qcGcnLFxuICAgICAgICAnL2ltYWdlcy9vbmx5ZmFucy8zLXZvdGVzLWZvci13b21lbi9nYWxsZXJ5L3ZvdGVGb3JXb21lbiAoMTEpLmpwZycsXG4gICAgICAgICcvaW1hZ2VzL29ubHlmYW5zLzMtdm90ZXMtZm9yLXdvbWVuL2dhbGxlcnkvdm90ZUZvcldvbWVuICgxMikuanBnJyxcbiAgICAgICAgJy9pbWFnZXMvb25seWZhbnMvMy12b3Rlcy1mb3Itd29tZW4vZ2FsbGVyeS92b3RlRm9yV29tZW4gKDEzKS5qcGcnLFxuICAgICAgICAnL2ltYWdlcy9vbmx5ZmFucy8zLXZvdGVzLWZvci13b21lbi9nYWxsZXJ5L3ZvdGVGb3JXb21lbiAoMTQpLmpwZycsXG4gICAgICAgICcvaW1hZ2VzL29ubHlmYW5zLzMtdm90ZXMtZm9yLXdvbWVuL2dhbGxlcnkvdm90ZUZvcldvbWVuICgxNSkuanBnJyxcbiAgICAgICAgJy9pbWFnZXMvb25seWZhbnMvMy12b3Rlcy1mb3Itd29tZW4vZ2FsbGVyeS92b3RlRm9yV29tZW4gKDE2KS5qcGcnLFxuICAgICAgICAnL2ltYWdlcy9vbmx5ZmFucy8zLXZvdGVzLWZvci13b21lbi9nYWxsZXJ5L3ZvdGVGb3JXb21lbiAoMTcpLmpwZycsXG4gICAgICAgICcvaW1hZ2VzL29ubHlmYW5zLzMtdm90ZXMtZm9yLXdvbWVuL2dhbGxlcnkvdm90ZUZvcldvbWVuICgxOCkuanBnJyxcbiAgICAgICAgJy9pbWFnZXMvb25seWZhbnMvMy12b3Rlcy1mb3Itd29tZW4vZ2FsbGVyeS92b3RlRm9yV29tZW4gKDE5KS5qcGcnLFxuICAgICAgICAnL2ltYWdlcy9vbmx5ZmFucy8zLXZvdGVzLWZvci13b21lbi9nYWxsZXJ5L3ZvdGVGb3JXb21lbiAoMjApLmpwZydcbiAgICAgIF1cbiAgICB9XG4gIF0pXG59XG4iXSwibmFtZXMiOlsiaGFuZGxlciIsInJlcSIsInJlcyIsInN0YXR1cyIsImpzb24iLCJpZCIsIm5hbWUiLCJ0ZXh0IiwiZGF0ZSIsImltYWdlcyJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///(api)/./pages/api/onlyfans/3-votes-for-women.js\n");
+
+/***/ })
+
+};
+;
+
+// load runtime
+var __webpack_require__ = require("../../../webpack-api-runtime.js");
+__webpack_require__.C(exports);
+var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
+var __webpack_exports__ = (__webpack_exec__("(api)/./pages/api/onlyfans/3-votes-for-women.js"));
+module.exports = __webpack_exports__;
+
+})();

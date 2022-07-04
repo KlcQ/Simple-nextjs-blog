@@ -1,0 +1,31 @@
+{
+  "name": "dev",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "next dev",
+    "buid": "next build",
+    "prettier": "prettier -write .",
+    "lint": "next lint"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@chakra-ui/icons": "^2.0.2",
+    "@chakra-ui/react": "^2.2.1",
+    "@emotion/react": "^11.9.3",
+    "@emotion/styled": "^11.9.3",
+    "framer-motion": "^6.3.16",
+    "next": "^12.1.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-spring": "^9.4.5",
+    "swiper": "^8.2.6"
+  },
+  "devDependencies": {
+    "eslint": "^8.18.0",
+    "eslint-config-next": "^12.1.6",
+    "prettier": "^2.7.1"
+  }
+}
