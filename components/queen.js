@@ -10,7 +10,11 @@ const QueenImg = chakra(motion.div, {
 const Queen = ({ children }) => (
   <QueenImg
     initial={{ y: -100, scale: 0.5, opacity: 0 }}
-    animate={{ y: 0, scale: 0.95, opacity: 1 }}
+    animate={{
+      y: 0,
+      scale: 0.95,
+      opacity: 1
+    }}
     transition={{ type: 'easeInOut', duration: 0.2 }}
     whileHover={{ scale: 1 }}
   >

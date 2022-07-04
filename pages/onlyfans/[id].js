@@ -23,6 +23,7 @@ import { EffectCards } from 'swiper'
   Left icon button vedla nazvu postu a badgu pre datum postu je cez Title: post.js
   */
 }
+
 const Cardeffect = styled(animated.div)``
 const calc = (x, y) => [
   -(y - window.innerHeight / 2) / 20,
@@ -30,7 +31,7 @@ const calc = (x, y) => [
   1.01
 ]
 const trans = (x, y, s) =>
-  `perspective(1200px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`
+  `perspective(800px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`
 
 export default function Post({ post }) {
   const [props, set] = useSpring(() => ({
@@ -51,20 +52,13 @@ export default function Post({ post }) {
           <Paragraph> {id} </Paragraph>
         </VisuallyHidden>
 
-        <Box maxW="container.sm" align="center">
-          <Cardeffect
-            onMouseMove={({ clientX: x, clientY: y }) =>
-              set({ xys: calc(x, y) })
-            }
-            onMouseLeave={() => set({ xys: [0, 0, 1] })}
-            style={{ transform: props.xys.interpolate(trans) }}
-          >
-            <Swiper
-              effect={'cards'}
-              grabCursor={true}
-              modules={[EffectCards]}
-              className="mySwiper"
-            >
+        <Cardeffect
+          onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
+          onMouseLeave={() => set({ xys: [0, 0, 1] })}
+          style={{ transform: props.xys.to(trans) }}
+        >
+          <Box maxW="container.sm" align="center">
+            <Swiper effect={'cards'} grabCursor={true} modules={[EffectCards]}>
               {post[0].images.map((postImg, index) => (
                 <SwiperSlide key={index}>
                   <Image
@@ -76,8 +70,8 @@ export default function Post({ post }) {
                 </SwiperSlide>
               ))}
             </Swiper>
-          </Cardeffect>
-        </Box>
+          </Box>
+        </Cardeffect>
       </Container>
     </Layout>
   )
