@@ -84,9 +84,7 @@ export default function Post({ post }) {
 }
 
 export async function getServerSideProps({ params }) {
-  const req = await fetch(
-    `https://simple-nextjs-blog-pink.vercel.app/api/onlyfans/${params.id}`
-  )
+  const req = await fetch(`http://localhost:3000/api/onlyfans/${params.id}`)
   const data = await req.json()
 
   return {
