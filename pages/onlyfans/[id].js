@@ -6,62 +6,52 @@ import Layout from '../../components/layouts/article'
 import Paragraph from '../../components/paragraph'
 import { useSpring, animated } from 'react-spring'
 import styled from '@emotion/styled'
-import { css, jsx } from '@emotion/react'
-
-{
-  /* 
-  CardEffect styled(animated.div) ze vraj ptorebny... 1.01 v calc je scale po mouseover...
-  const [props, set] - config , nastavuje efekt, default config treba importovat ako {react} from 'spring'
-  for some rason musim mat fetchnute data oznacene [0] (post[0])... Co robi perspective(X px) v trans som uz zabudol... ale opravil som cez to nieco
-  cez .map loop nastavenie alt imagu.. 
-  nazov galerie + index obrazka + Belle Delphine.
-  pre index.js/[id].js pridany key={index aktualneho loopu}
-  Left icon button vedla nazvu postu a badgu pre datum postu je cez Title: post.js
-  */
-}
-
-const Cardeffect = styled(animated.div)``
-
-const calc = (x, y) => [
-  -(y - window.innerHeight / 2) / 60,
-  (x - window.innerWidth / 2) / 60,
-  1.01
-]
-const trans = (x, y, s) =>
-  `perspective(900px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`
+import { css } from '@emotion/react'
 
 export default function Post({ post }) {
+  //MouseOver 3dCard effect - react-spring
+  const Cardeffect = styled(animated.div)``
+
+  const calc = (x, y) => [
+    -(y - window.innerHeight / 2) / 60,
+    (x - window.innerWidth / 2) / 60,
+    1.01
+  ]
+  const trans = (x, y, s) =>
+    `perspective(900px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`
+
+  //react-card-rotate-swiper return call po swipe
   const handleSwipe = () => {}
 
-  const answers = post[0].images.map((postImg, index) => {
+  //Loop pre zobrazenie imgs
+  const SwipeImages = post[0].images.map((postImg, index) => {
     return (
-      <>
-        <CardSwiper
-          onSwipe={handleSwipe}
-          className={'swiper'}
-          contents={
-            <Image
-              zIndex={index * -1}
-              position="absolute"
-              borderRadius="lg"
-              src={postImg}
-              alt={`${post[0].name} ${index} - Belle Delphine`}
-              key={index}
-              css={css`
-                box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 1px;
-              `}
-            />
-          }
-        />
-      </>
+      <CardSwiper
+        key={index}
+        onSwipe={handleSwipe}
+        contents={
+          <Image
+            zIndex={index * -1}
+            position="absolute"
+            borderRadius="lg"
+            src={postImg}
+            alt={`${post[0].name} ${index} - Belle Delphine`}
+            key={index}
+            css={css`
+              box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 1px;
+            `}
+          />
+        }
+      />
     )
   })
 
+  //MouseOver 3dCard effect - react-spring - config setup
   const [props, set] = useSpring(() => ({
     xys: [0, 0, 1],
     config: { mass: 5, tension: 600, friction: 500 }
   }))
-
+  //Router
   const router = useRouter()
   const { id } = router.query
 
@@ -73,10 +63,7 @@ export default function Post({ post }) {
         </Title>
         <Paragraph>{post[0].text}</Paragraph>
         <VisuallyHidden>
-          <Paragraph>
-            {' '}
-            {id} {jsx}{' '}
-          </Paragraph>
+          <Paragraph>{id}</Paragraph>
         </VisuallyHidden>
 
         <Cardeffect
@@ -84,7 +71,7 @@ export default function Post({ post }) {
           onMouseLeave={() => set({ xys: [0, 0, 1] })}
           style={{ transform: props.xys.to(trans) }}
         >
-          {answers}
+          {SwipeImages}
         </Cardeffect>
       </Container>
     </Layout>

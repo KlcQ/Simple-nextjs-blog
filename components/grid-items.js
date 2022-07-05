@@ -1,13 +1,6 @@
 import NextLink from 'next/link'
-import {
-  Box,
-  Text,
-  LinkBox,
-  LinkOverlay,
-  Image,
-  VisuallyHidden
-} from '@chakra-ui/react'
-import { css, jsx } from '@emotion/react'
+import { Box, Text, LinkBox, LinkOverlay, Image } from '@chakra-ui/react'
+import { css } from '@emotion/react'
 
 export const GridItem = ({ children, href, title, thumbnail }) => (
   <Box w="100%" textAlign="center">
@@ -39,9 +32,6 @@ export const OfGridItem = ({ children, id, title, thumbnail }) => (
           </Text>
         </LinkOverlay>
         <Text fontSize={14}>{children}</Text>
-        <VisuallyHidden>
-          <Text>{jsx}</Text>
-        </VisuallyHidden>
       </LinkBox>
     </NextLink>
   </Box>

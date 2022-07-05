@@ -17,7 +17,7 @@ import Queen from '../components/queen'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 import { HonorMention, HonorName } from '../components/honor'
 import Honor from '../components/honorani'
-import { css, jsx } from '@emotion/react'
+import { css } from '@emotion/react'
 
 function reducer(secret, action) {
   switch (action.type) {
@@ -58,7 +58,6 @@ const Page = () => {
                 />
                 <VisuallyHidden>
                   <Image src="/images/belle.jpg" alt="Wifu" />
-                  {jsx}
                 </VisuallyHidden>
               </Queen>
             </Box>
