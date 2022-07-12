@@ -33,7 +33,7 @@ export default function Onlyfans({ post }) {
 }
 
 export async function getServerSideProps() {
-  const req = await fetch(`http://localhost:8000/api/onlyfans`)
+  const req = await fetch(`https://simple-nextjs-blog-two.vercel.app/api/onlyfans`)
   const data = await req.json()
   return {
     props: { post: data }
